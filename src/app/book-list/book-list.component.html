@@ -1,0 +1,3 @@
+<div *ngFor="let book of books">
+  <strong>{{ book.title}}</strong> - {{book.author}}<button [hidden]="book.isRead" (click)="bookReadAction(book)">Przeczytane</button>
+</div>
